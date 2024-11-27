@@ -1,0 +1,11 @@
+#All line starting with # will be treated as comment and 1 configuration variale should be in a line
+#remove all lines with #
+#this is Sample Configuration file for secondary Ethernet Which is being used for communicating with PLC
+#in this configuration file you can speciy following
+#ip_address:<Ip address that you want to use> e.g. ip_address:192.168.0.12 in this section device will only take first 4 fields
+#subnet_mask:<subnet number> e.g. 24, {24= 255.255.255.0} , {23= 255.255.254.0}
+#port_number: <port in which plc is going to communicate with datalogger> e.g. 3333 {user can use port number from 1025 - 65535}
+#one sample example 
+ip_address:192.168.0.33
+subnet_mask:24
+port_number:3999

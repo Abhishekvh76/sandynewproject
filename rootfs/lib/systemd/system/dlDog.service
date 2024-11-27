@@ -1,0 +1,13 @@
+[Unit]
+Description=Datalogger dog application service
+RequiresMountsFor=/app_data
+After=dataloggerStarter.service
+[Service]
+Type=simple
+ExecStart=/usr/bin/dogApp
+Restart=on-failure
+RestartSec=10
+KillMode=process
+[Install]
+WantedBy=multi-user.target
+

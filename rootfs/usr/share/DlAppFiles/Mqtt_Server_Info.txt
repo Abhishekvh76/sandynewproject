@@ -1,0 +1,7 @@
+this is the json object file containing mqtt server informations
+{
+    "ip_address":"192.168.5.143",
+    "port_no":"1883",
+    "username":"hydacMqtt",
+    "password":"mqttProd@hydac"
+}

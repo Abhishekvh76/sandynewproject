@@ -1,0 +1,14 @@
+[Unit]
+Description=NIE datalogger application service
+RequiresMountsFor=/app_data
+RequiresMountsFor=/log_data
+After=dataloggerStarter.service
+[Service]
+Type=simple
+ExecStart=/usr/bin/mainProject
+Restart=on-failure
+RestartSec=10
+KillMode=process
+[Install]
+WantedBy=multi-user.target
+

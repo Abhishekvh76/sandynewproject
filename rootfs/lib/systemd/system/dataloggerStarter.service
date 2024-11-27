@@ -1,0 +1,10 @@
+[Unit]
+Description=Datalogger initialization service
+RequiresMountsFor=/app_data
+Before=nieDLService.service
+[Service]
+Type=oneshot
+ExecStart=/usr/sbin/dataloggerStart.sh
+RemainAfterExit=no
+[Install]
+WantedBy=multi-user.target

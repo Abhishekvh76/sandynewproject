@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=/usr
+includedir=/usr/include
+libdir=/usr/lib
+
+Name: libidn2
+Description: Library implementing IDNA2008 and TR46
+Version: 2.0.5
+Cflags: -I${includedir}
+Libs: -L${libdir} -lidn2
+Libs.private:  -L/edata/sunil/yocto_project/imx/community_yocto/fsl-community-bsp/datalogger-build/tmp/work/armv7at2hf-neon-fslc-linux-gnueabi/libidn2/2.0.5-r0/recipe-sysroot/usr/lib -lunistring
